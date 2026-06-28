@@ -1,3 +1,4 @@
+//Herda de animal.
 public class Cachorro extends Animal{
 
     public Cachorro(String nome, char porte){
