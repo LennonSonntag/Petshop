@@ -1,3 +1,4 @@
+//Todo pedido vai ter obrigatoriamente um banho.
 public class Banho extends Servico {
 
     public Banho(Animal animal) {
