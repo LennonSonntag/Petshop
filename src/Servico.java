@@ -1,3 +1,4 @@
+// Classe abstrata que representa qualquer serviço realizado no petshop.
 public abstract class Servico {
 
     protected Animal animal;
