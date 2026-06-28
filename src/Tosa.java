@@ -12,7 +12,7 @@ public class Tosa extends Servico{
         // Regra para gato:
         // A tosa de gato possui valor único.
         if (animal instanceof Gato) {
-            return 70;
+            return 50;
         }
 
         // Regra para cachorro:
