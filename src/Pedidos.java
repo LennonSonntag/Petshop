@@ -1,5 +1,4 @@
-public class Pedidos {
-  import java.util.ArrayList;
+import java.util.ArrayList;
 
 // Um pedido possui um animal, um banho obrigatório e pode ter adicionais.
 public class Pedidos {
@@ -75,4 +74,4 @@ public class Pedidos {
         System.out.println("Valor total: R$ " + calcularTotal());
     }
 }
-}
+
