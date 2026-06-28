@@ -16,6 +16,7 @@ public abstract class Animal {
         return porte;
     }
 
+    // Valida o porte informado (P, M ou G).
     public void setPorte(char porte) {
         porte = Character.toUpperCase(porte);
 
