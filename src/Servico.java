@@ -6,7 +6,7 @@ public abstract class Servico {
 
     public Servico(Animal animal) {
         //Darlan: Acho que precisa da linha abaixo:
-        this.animal = animal;
+        //this.animal = animal;
     }
 
     public void String(String descricao){
