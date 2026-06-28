@@ -8,13 +8,14 @@ public class Banho extends Servico {
     public double precificacao() {
 
         switch (animal.getPorte()) {
-            case 'p':
+                //Darlan: alterei p, m e g para maiusculo.
+            case 'P':
                 return 50;
 
-            case 'm':
+            case 'M':
                 return 60;
 
-            case 'g':
+            case 'G':
                 return 70;
 
             default:
