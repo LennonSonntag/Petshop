@@ -4,7 +4,7 @@ public class Adicional extends Servico {
     private String tipo;
 
     public Adicional(Animal animal, String tipo) {
-        super(animal, "Adicional " + tipo);
+        super(animal, tipo);
         this.tipo = tipo.toUpperCase();
     }
 
@@ -25,7 +25,7 @@ public class Adicional extends Servico {
             case "CORTE_UNHA":
                 return 10;
 
-            case "ANIMAL_BRAVO"
+            case "ANIMAL_BRAVO":
                 return 10;
 
             default:

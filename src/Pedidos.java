@@ -3,27 +3,38 @@ import java.util.ArrayList;
 // Um pedido possui um animal, um banho obrigatório e pode ter adicionais.
 public class Pedidos {
 
+    private int numeroPedido;
+    private static int contador = 1;
+
     private Animal animal;
     private Banho banho;
     private Tosa tosa;
     private ArrayList<Adicional> adicionais;
 
-    // Todo pedido já recebe um animal e cria automaticamente um banho.
+    //Todo pedido já recebe um animal e cria automaticamente um banho.
     public Pedidos(Animal animal) {
         this.animal = animal;
 
-        // Todo animal obrigatoriamente terá banho.
+        //Gera automaticamente o número do pedido.
+        this.numeroPedido = contador++;
+
+        //Todo animal obrigatoriamente terá banho.
         this.banho = new Banho(animal);
 
-        // A lista começa vazia e pode receber vários adicionais.
+        //A lista começa vazia e pode receber vários adicionais.
         this.adicionais = new ArrayList<>();
+    }
+
+    //getter do numero do pedido
+    public int getNumeroPedido() {
+        return numeroPedido;
     }
   
     public void adicionarTosa(Tosa tosa) {
         this.tosa = tosa;
     }
 
-    // Como usamos ArrayList, o pedido pode ter vários adicionais.
+    //Como usamos ArrayList, o pedido pode ter vários adicionais.
     public void adicionarAdicional(Adicional adicional) {
         adicionais.add(adicional);
     }
@@ -46,9 +57,9 @@ public class Pedidos {
         return total;
     }
 
-    // Método para exibir o resumo completo do pedido no terminal.
+    //Método para exibir o resumo completo do pedido no terminal.
     public void exibirResumo() {
-        System.out.println("===== RESUMO DO PEDIDO =====");
+        System.out.println("===== PEDIDO Nº " + numeroPedido + " =====");
 
         System.out.println("Animal: " + animal);
 

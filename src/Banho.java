@@ -2,7 +2,7 @@
 public class Banho extends Servico {
 
     public Banho(Animal animal) {
-        super(animal);
+        super(animal, "Banho");
     }
     
     //Darlan: Aqui fiz uma alteração, pois gato só tem um tamanho.
@@ -40,7 +40,7 @@ public class Banho extends Servico {
     public double precificacao() {
 
         switch (animal.getPorte()) {
-                //Darlan: alterei p, m e g para maiusculo.
+
             case 'P':
                 return 50;
 
