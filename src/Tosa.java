@@ -3,9 +3,6 @@ public class Tosa extends Servico{
     public Tosa(Animal animal) {
         super(animal, "tosa");
     }
-    
-    //Darlan: Fiz uma alteração pois gato não tem diferença de tamanho. Se formos utilizar, apagamos o outro.
-    //(deixa o comentario acima)
 
      @Override
     public double precificacao() {
